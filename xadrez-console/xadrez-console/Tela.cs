@@ -13,7 +13,7 @@ namespace xadrez_console
         {
             for (int i = 0; i < tab.Linhas; i ++)
             {
-                for (int j = 0 j < tab.Colunas; j++)
+                for (int j = 0; j < tab.Colunas; j++)
                 {
                     if (tab.peca(i, j) == null)
                     {
@@ -22,7 +22,7 @@ namespace xadrez_console
                     {
                         Console.Write(tab.peca(i, j) + " ");
                     }                    
-                }
+                } 
                 Console.WriteLine();
             }
         }
