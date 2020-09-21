@@ -29,5 +29,17 @@ namespace tabuleiro
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
         }
+
+        public Peca retirarPeca(Posicao pos)
+        {
+            if (pecas[pos.linha, pos.coluna] == null) return null;
+
+            Peca aux = pecas[pos.linha, pos.coluna];
+            aux.posicao = null;
+            pecas[pos.linha, pos.coluna] = null;
+            return aux;
+        }
+
+
     }
 }
